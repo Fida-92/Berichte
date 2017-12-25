@@ -1,0 +1,19 @@
+# alle : :(.*?): : : werden in einem Collections (Map || Array ) gespeichert. 
+# daraus wird gelesen und im Bericht ersetzt.
+#
+
+ausbildungsjahr: ::2:::  
+nummer:          ::1:::
+name:           ::Ahmadi, Fida:::  
+kalenderwoche:  ::36:::   
+datum:            ::04.09.17 - 08.09.17::: 
+
+#tag tätigkeit  anzahl in std. =7,9
+montag:         ::\textbf{vit}, Vorbereitung auf SQL-Workshop und Backlogpflege DGFG::: 
+diestag:        ::Berufsschule ( Geschäftsprozesse, Politik, ITSysteme ):::
+mittwoch:       ::\textbf{vit}, Arbeit an einer DGFG-Story \& SQL-Schulung:::
+
+donnerstag:     ::\textbf{vit}, Team B, Backlogpflege            &     \\  & Selbststudium \href{https://www.sololearn.com/Certificate/1014-6081289/pdf/}{HTML}  \& \href{https://www.sololearn.com/Certificate/1060-6081289/pdf}{SQL} auf der Webseite \href{https://www.sololearn.com/}{"SoloLearn"}::: 
+freitag:        ::\textbf{vit}, Team B, Retrospektive & \\ & Selbststudium \href{https://www.sololearn.com/Certificate/1024-6081289/pdf/}{JavaScript} auf \href{https://www.sololearn.com/}{"SoloLearn"}:::
+###### 
+\renewcommand{  ::nummer: : :}{\getNumber}

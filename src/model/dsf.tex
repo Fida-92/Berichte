@@ -1,0 +1,53 @@
+ 
+\documentclass[a4paper, 14pt]{scrbook}  
+\usepackage[utf8]{inputenc}  
+\usepackage{graphicx} 
+\usepackage{multirow}
+\usepackage{tabularx} 
+\usepackage{datetime}
+\usepackage{booktabs}
+\usepackage{comment}
+\usepackage{hyperref}
+\setlength\extrarowheight{0pt}
+\setlength{\parindent}{0pt}
+\begin{document} 
+\pagestyle{empty}  
+\begin{figure}[t]
+\hspace{13.0cm}
+\includegraphics[height=50mm, width=60mm]{vitLogo.jpg}
+\end{figure}
+\begin{flushleft}
+Ausbildungsjahr: :::ausbildungsjahr:: \\
+Ausbildungsnachweis Nr.: :::nummer::\\
+Name:     :::name::  \\ 
+Kalenderwoche: :::kalenderwoche:: \\ 
+Zeitraum:         :::datum::\\ 
+\newdateformat{specialdate}{\THEYEAR-\twodigit{\THEMONTH}-\twodigit{\THEDAY}}
+\date{\specialdate\today}
+\end{flushleft}
+\begin{table}[h]
+\renewcommand{\arraystretch}{1.0}
+\centering
+\begin{tabular*}{\linewidth}{lp{125mm}rl} 
+\multicolumn{3}{c} {\huge{Wochenbericht}} \\ \hline \hline 
+ 
+	Tag & Beschäftigung           & Std.\\ \hline 
+   Montag   &  :::montag::            & 7,9 \\ \hline
+
+\multirow{1}{*} {Dienstag} 
+            &  :::dienstag::          & 7,9 \\  \hline
+\multirow{1}{*} {Mittwoch} 
+            &  :::mittwoch::          & 7,9 \\  \hline
+\multirow{1}{*} {Donnerstag} 
+            & :::donnerstag::         & 7,9 \\ \hline
+
+\multirow{1}{*} {Freitag} 
+	    & :::freitag::            & 7,9 \\ \hline
+\multicolumn{2}{l} {Anzahl der Stunden insgesamt:}           & 39,5 \\ \hline
+\end{tabular*}
+\end{table} 
+\centering
+\par\vspace{2\baselineskip} 
+$\overline{\mbox{\small{Ort, Datum, Unterschrift  des Auszubildenden} }}$ ~~~  $\overline{\mbox{\small{Ort, Datum, Unterschrift des Ausbilders}} }$
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%
